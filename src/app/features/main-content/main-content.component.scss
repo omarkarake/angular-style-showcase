@@ -1,6 +1,12 @@
+@use "sass:math";
+@import "../../../styles.scss";
 .main-content {
-  padding: 20px;
+  padding: $spacing-unit;
   h1 {
-    margin-bottom: 20px;
+    font-family: $font-family;
+    margin-bottom: math.div($spacing-unit, 2);
+  }
+  @include respond-to("small") {
+    padding: math.div($spacing-unit, 2);
   }
 }
