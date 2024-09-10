@@ -1,0 +1,21 @@
+header {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      .nav-link {
+        text-decoration: none;
+        color: #007bff;
+        &:hover {
+          color: #0056b3;
+        }
+      }
+    }
+  }
+}
