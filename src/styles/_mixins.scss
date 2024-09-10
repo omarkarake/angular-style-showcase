@@ -1,0 +1,21 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin respond-to($media) {
+  @if $media == "small" {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $media == "medium" {
+    @media (min-width: 601px) and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $media == "large" {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+}
