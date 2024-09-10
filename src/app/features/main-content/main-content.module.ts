@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Child1Component } from '../../pages/child1/child1.component';
 import { Child2Component } from '../../pages/child2/child2.component';
 import { MainContentRoutingModule } from './main-content-routing.module';
+import { HighlightDirective } from '../../directives/highlight.directive';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main-content', pathMatch: 'full' },
@@ -12,7 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [MainContentComponent, Child1Component, Child2Component],
+  declarations: [MainContentComponent, Child1Component, Child2Component, HighlightDirective],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
