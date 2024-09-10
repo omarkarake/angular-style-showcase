@@ -1,0 +1,27 @@
+// Light theme variables
+$light-primary-color: #007bff;
+$light-secondary-color: #f8f9fa;
+$light-background-color: #ffffff;
+$light-text-color: #212529;
+
+// Dark theme variables
+$dark-primary-color: #375a7f;
+$dark-secondary-color: #444;
+$dark-background-color: #343a40;
+$dark-text-color: #e9ecef;
+
+// Mixin to apply light theme
+@mixin light-theme {
+  --primary-color: #{$light-primary-color};
+  --secondary-color: #{$light-secondary-color};
+  --background-color: #{$light-background-color};
+  --text-color: #{$light-text-color};
+}
+
+// Mixin to apply dark theme
+@mixin dark-theme {
+  --primary-color: #{$dark-primary-color};
+  --secondary-color: #{$dark-secondary-color};
+  --background-color: #{$dark-background-color};
+  --text-color: #{$dark-text-color};
+}

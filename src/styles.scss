@@ -6,3 +6,38 @@
 @import "styles/base";
 @import "styles/header";
 @import "styles/footer";
+@import "styles/themes";
+
+:root {
+  @include light-theme; // Default theme is light
+}
+
+.dark-theme {
+  @include dark-theme;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar, .footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.nav-link {
+  color: var(--text-color);
+  &:hover {
+    color: var(--primary-color-light); // Use the lighter version of the primary color
+  }
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid var(--secondary-color);
+  &:hover {
+    background-color: var(--primary-color-light); // Use the lighter version of the primary color
+  }
+}
