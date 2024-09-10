@@ -2,30 +2,7 @@
 @import "styles/variables";
 @import "styles/mixins";
 @import "styles/functions";
+@import "styles/main-content";
 @import "styles/base";
 @import "styles/header";
 @import "styles/footer";
-@import "styles/main-content";
-
-// Define SCSS variables
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$font-family: "Arial, sans-serif";
-$spacing-unit: 16px;
-
-// Mixin for responsive media queries
-@mixin respond-to($media) {
-  @if $media == "small" {
-    @media (max-width: 600px) {
-      @content;
-    }
-  } @else if $media == "medium" {
-    @media (min-width: 601px) and (max-width: 1024px) {
-      @content;
-    }
-  } @else if $media == "large" {
-    @media (min-width: 1025px) {
-      @content;
-    }
-  }
-}

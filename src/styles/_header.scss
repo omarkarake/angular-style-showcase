@@ -1,3 +1,4 @@
+@use "sass:math";
 header {
   background-color: $primary-color;
   padding: $spacing-unit;
@@ -8,7 +9,7 @@ header {
     .nav {
       list-style: none;
       display: flex;
-      gap: $spacing-unit / 2;
+      gap: math.div($spacing-unit, 2);
       .nav-link {
         text-decoration: none;
         color: white;
