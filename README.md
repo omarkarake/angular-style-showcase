@@ -1,7 +1,9 @@
 ## AngularStyleShowcase
-hosted link: 
+hosted link: https://meek-figolla-119550.netlify.app/home
 
 This project was generated with Angular CLI version 18.0.6. The application demonstrates proficiency with Angular CLI, component-based architecture, and advanced SCSS features, including a responsive design with light and dark theme support.
+
+You can clone or download project, run npm install. and then use ng serve to serve the application
 
 ## Development server
 
@@ -17,7 +19,7 @@ Run ng build to build the project. The build artifacts will be stored in the dis
 
 ## Running unit tests
 
-Run ng test to execute the unit tests via Karma. Ensure that the tests cover components, services, and other key functionalities.
+Run npm run test to execute the unit tests via jest. Ensure that the tests cover components, services, and other key functionalities.
 
 ## Running end-to-end tests
 
