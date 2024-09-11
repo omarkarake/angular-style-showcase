@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
-import {
-  Resolve,
-  ActivatedRouteSnapshot,
-  RouterStateSnapshot,
-} from '@angular/router';
+import { Resolve } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
@@ -17,10 +13,7 @@ export class RecipeResolver implements Resolve<RecipeData> {
 
   constructor(private http: HttpClient) {}
 
-  resolve(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ): Observable<RecipeData> {
+  resolve(): Observable<RecipeData> {
     return this.http.get<RecipeData>(this.apiUrl).pipe(
       catchError((error) => {
         console.error('Error fetching recipes:', error);
