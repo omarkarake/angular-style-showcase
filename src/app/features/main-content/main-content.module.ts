@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainContentComponent } from './main-content.component';
 import { RouterModule, Routes } from '@angular/router';
-import { Child1Component } from '../../pages/child1/child1.component';
-import { Child2Component } from '../../pages/child2/child2.component';
 import { MainContentRoutingModule } from './main-content-routing.module';
 import { HighlightDirective } from '../../directives/highlight.directive';
 
@@ -13,7 +11,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [MainContentComponent, Child1Component, Child2Component, HighlightDirective],
+  declarations: [MainContentComponent, HighlightDirective],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

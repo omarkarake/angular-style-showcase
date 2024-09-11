@@ -1,5 +1,8 @@
 <main class="main-content">
-  <h1>Latest Blogs</h1>
-  <app-child1 appHighlight="lightblue"></app-child1>
-  <app-child2 appHighlight="lightgreen"></app-child2>
+  <div>
+    <h1>Latest Blogs</h1>
+    <button routerLink="first-blog">recent blogs</button>
+    <button routerLink="second-blog">popular blogs</button>
+    <router-outlet></router-outlet>
+  </div>
 </main>

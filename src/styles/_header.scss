@@ -1,11 +1,22 @@
 @use "sass:math";
 header {
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   padding: $spacing-unit;
+  position: sticky;
+  top: 0;
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .navbar-brand {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      &:hover {
+        color: lighten($primary-color, 20%);
+      }
+    }
     .nav {
       list-style: none;
       display: flex;
