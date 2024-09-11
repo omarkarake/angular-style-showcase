@@ -1,8 +1,9 @@
 <main class="main-content">
-  <div>
+  <div class="main-class">
     <h1>Latest Blogs</h1>
-    <button routerLink="first-blog">recent blogs</button>
-    <button routerLink="second-blog">popular blogs</button>
-    <router-outlet></router-outlet>
+    <button routerLink="recent-blog">recent blogs</button>
+    <button routerLink="popular-blog">popular blogs</button>
   </div>
+  <!-- Router outlet for child routes (first-blog, second-blog) -->
+  <router-outlet></router-outlet>
 </main>

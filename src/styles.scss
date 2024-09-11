@@ -41,3 +41,16 @@ body {
     background-color: var(--primary-color-light); // Use the lighter version of the primary color
   }
 }
+
+
+button{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  border-radius: 8px; 
+  padding: 10px 15px;
+  &:hover{
+      background-color: var(--primary-color-light);
+  }
+}

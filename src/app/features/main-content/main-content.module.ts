@@ -14,7 +14,7 @@ const routes: Routes = [
   declarations: [MainContentComponent, HighlightDirective],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
+    // RouterModule.forChild(routes),
     MainContentRoutingModule,
   ],
 })
