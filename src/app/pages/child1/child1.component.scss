@@ -4,4 +4,10 @@
   gap: 20px;
   justify-content: center;
   padding: 20px;
+  z-index: -1000;
+  :hover {
+    transform: scale(1.1);
+    transition: ease-in 0.5s;
+    cursor: pointer;
+  }
 }
