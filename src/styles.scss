@@ -19,6 +19,14 @@
   @include dark-theme;
 }
 
+.soft-pastels-light-theme {
+  @include soft-pastels-light-theme; // Applies soft pastels light theme
+}
+
+.soft-pastels-dark-theme {
+  @include soft-pastels-dark-theme; // Applies soft pastels dark theme
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);

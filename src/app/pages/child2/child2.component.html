@@ -1,8 +1,13 @@
-<article class="recipe-post">
-  <h2>Getting Started with SCSS in Angular</h2>
-  <p>
-    SCSS is a powerful CSS preprocessor that adds features such as variables,
-    nesting, and mixins...
-  </p>
-  <a href="#">Read more</a>
-</article>
+<div class="recipe-cards">
+  <div *ngFor="let recipe of recipes" class="recipe-card">
+    <img [src]="recipe.image" alt="{{ recipe.name }}" class="recipe-image">
+    <h3>{{ recipe.name }}</h3>
+    <p><strong>Prep Time:</strong> {{ recipe.prepTimeMinutes }} mins</p>
+    <p><strong>Cook Time:</strong> {{ recipe.cookTimeMinutes }} mins</p>
+    <p><strong>Servings:</strong> {{ recipe.servings }}</p>
+    <p><strong>Difficulty:</strong> {{ recipe.difficulty }}</p>
+    <p><strong>Rating:</strong> {{ recipe.rating }} / 5</p>
+    <p><strong>Calories:</strong> {{ recipe.caloriesPerServing }} kcal</p>
+    <button class="details-button">View Details</button>
+  </div>
+</div>

@@ -1,15 +1,49 @@
-.recipe-post {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 15px;
-  h2 {
-    margin-top: 0;
+.recipe-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.recipe-card {
+  background-color: var(--card-background-color); // Use theme variable
+  border: 1px solid var(--card-border-color); // Use theme variable
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
   }
-  a {
-    text-decoration: none;
-    color: #007bff;
+
+  h3 {
+    margin-top: 12px;
+    font-size: 1.2em;
+    color: var(--card-text-color); // Use theme variable
+  }
+
+  .details-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(
+      --button-background-color,
+      #007bff
+    ); // Use theme variable
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
     &:hover {
-      text-decoration: underline;
+      background-color: var(
+        --button-hover-background-color
+      ); // Use theme variable
     }
   }
 }
