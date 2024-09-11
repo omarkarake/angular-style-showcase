@@ -8,19 +8,24 @@ const routes: Routes = [
     component: MainContentComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'recent-blog', // Redirect to 'recent-blog' by default
+        pathMatch: 'full',
+      },
+      {
         path: 'recent-blog',
         loadComponent: () =>
           import('../../pages/child1/child1.component').then(
             (m) => m.Child1Component
           ),
-      }, // Handles the first-blog route of MainContent
+      },
       {
         path: 'popular-blog',
         loadComponent: () =>
           import('../../pages/child2/child2.component').then(
             (m) => m.Child2Component
           ),
-      }, // Handles the second-blog route of MainContent
+      },
     ],
   },
 ];
