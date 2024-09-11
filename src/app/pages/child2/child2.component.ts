@@ -3,13 +3,14 @@ import { ActivatedRoute } from '@angular/router';
 import { Recipe, RecipeData } from '../../models/recipe.model';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
+import { RecipeCardComponent } from '../../recipe-card/recipe-card.component';
 
 @Component({
   selector: 'app-child2',
   templateUrl: './child2.component.html',
   styleUrl: './child2.component.scss',
   standalone: true,
-  imports: [CommonModule], // Add CommonModule to the imports array
+  imports: [CommonModule, RecipeCardComponent], // Add RecipeCardComponent to the imports array
 })
 export class Child2Component implements OnInit, OnDestroy {
   recipes: Recipe[] = [];

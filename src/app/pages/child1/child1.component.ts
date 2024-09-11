@@ -3,13 +3,14 @@ import { ActivatedRoute } from '@angular/router';
 import { Recipe, RecipeData } from '../../models/recipe.model';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
+import { RecipeCardComponent } from '../../recipe-card/recipe-card.component';
 
 @Component({
   selector: 'app-child1',
   templateUrl: './child1.component.html',
-  styleUrl: './child1.component.scss',
+  styleUrls: ['./child1.component.scss'],
   standalone: true,
-  imports: [CommonModule], // Add CommonModule to the imports array
+  imports: [CommonModule, RecipeCardComponent], // Add RecipeCardComponent to the imports array
 })
 export class Child1Component implements OnInit, OnDestroy {
   recipes: Recipe[] = [];
@@ -25,6 +26,7 @@ export class Child1Component implements OnInit, OnDestroy {
       })
     );
   }
+
   ngOnDestroy(): void {
     this.parentSubscription.unsubscribe();
   }
