@@ -1,5 +1,5 @@
 ## AngularStyleShowcase
-hosted link: https://meek-figolla-119550.netlify.app/home
+hosted link: https://meek-figolla-119550.netlify.app/
 
 This project was generated with Angular CLI version 18.0.6. The application demonstrates proficiency with Angular CLI, component-based architecture, and advanced SCSS features, including a responsive design with light and dark theme support.
 
