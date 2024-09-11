@@ -11,8 +11,9 @@ const routes: Routes = [
       import('./features/main-content/main-content.module').then(
         (m) => m.MainContentModule
       ),
-  }, // Lazy-loaded main-content route
-  // { path: '**', redirectTo: 'home' }, // Fallback route
+  },
+  { path: 'contact', loadChildren: () => import('./features/contact/contact.module').then(m => m.ContactModule) }, // Lazy-loaded main-content route
+  { path: '**', redirectTo: 'home' }, // Fallback route
 ];
 
 @NgModule({

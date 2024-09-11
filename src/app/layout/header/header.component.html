@@ -1,11 +1,13 @@
 <header>
   <nav class="navbar">
-    <a class="navbar-brand" href="#">MyApp</a>
+    <a class="navbar-brand" routerLink="#">MyApp</a>
     <ul class="nav">
-      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="#">About</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="#">Services</a></li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="contact">Contact</a>
+      </li>
     </ul>
     <button (click)="toggleTheme()">Toggle Theme</button>
   </nav>
