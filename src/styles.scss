@@ -12,6 +12,7 @@
 
 :root {
   @include light-theme; // Default theme is light
+  transition: ease-in 0.3s;
 }
 
 .dark-theme {
@@ -23,7 +24,8 @@ body {
   color: var(--text-color);
 }
 
-.navbar, .footer {
+.navbar,
+.footer {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
@@ -31,15 +33,23 @@ body {
 .nav-link {
   color: var(--text-color);
   &:hover {
-    color: var(--primary-color-light); // Use the lighter version of the primary color
+    color: var(
+      --primary-color-light
+    ); // Use the lighter version of the primary color
   }
 }
 
-.button {
+button {
   background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
   color: var(--text-color);
   border: 1px solid var(--secondary-color);
   &:hover {
-    background-color: var(--primary-color-light); // Use the lighter version of the primary color
+    background-color: var(
+      --primary-color-light
+    ); // Use the lighter version of the primary color
+    border: 1px solid var(--paragraph-text-color); // Use the lighter version of the primary color
   }
 }
