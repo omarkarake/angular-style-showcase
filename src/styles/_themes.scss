@@ -1,30 +1,6 @@
 // _themes.scss
 
-// Light theme variables
-$light-primary-color: #007bff;
-$light-secondary-color: #f8f9fa;
-$light-background-color: #ffffff;
-$light-text-color: #212529;
-
-// Dark theme variables
-$dark-primary-color: #375a7f;
-$dark-secondary-color: #444;
-$dark-background-color: #343a40;
-$dark-text-color: #e9ecef;
-
-// Soft Pastels - Light theme variables
-$soft-light-primary-color: #4a5568; // Charcoal
-$soft-light-primary-color-light: #718096; // Lighter version of the primary color
-$soft-light-secondary-color: #edf2f7; // Soft White
-$soft-light-background-color: #ffffff; // Pure white background
-$soft-light-text-color: #2d3748; // Dark Gray
-
-// Soft Pastels - Dark theme variables
-$soft-dark-primary-color: #edf2f7; // Soft White for primary elements
-$soft-dark-primary-color-light: #e2e8f0; // Lighter version of the primary color
-$soft-dark-secondary-color: #2d3748; // Dark Slate
-$soft-dark-background-color: #1a202c; // Very dark background
-$soft-dark-text-color: #f7fafc; // Very light gray text
+@import 'variables'; // Ensure this import is present at the top
 
 // Mixin to apply light theme
 @mixin light-theme {
@@ -32,6 +8,15 @@ $soft-dark-text-color: #f7fafc; // Very light gray text
   --secondary-color: #{$light-secondary-color};
   --background-color: #{$light-background-color};
   --text-color: #{$light-text-color};
+
+  // Additional variables for the home section
+  --section-background-color: #{$light-section-background-color};
+  --section-text-color: #{$light-section-text-color};
+  --heading-text-color: #{$light-heading-text-color};
+  --paragraph-text-color: #{$light-paragraph-text-color};
+  --button-text-color: #{$light-button-text-color};
+  --button-background-color: #{$light-button-background-color};
+  --button-hover-background-color: #{$light-button-hover-background-color};
 }
 
 // Mixin to apply dark theme
@@ -40,9 +25,18 @@ $soft-dark-text-color: #f7fafc; // Very light gray text
   --secondary-color: #{$dark-secondary-color};
   --background-color: #{$dark-background-color};
   --text-color: #{$dark-text-color};
+
+  // Additional variables for the home section
+  --section-background-color: #{$dark-section-background-color};
+  --section-text-color: #{$dark-section-text-color};
+  --heading-text-color: #{$dark-heading-text-color};
+  --paragraph-text-color: #{$dark-paragraph-text-color};
+  --button-text-color: #{$dark-button-text-color};
+  --button-background-color: #{$dark-button-background-color};
+  --button-hover-background-color: #{$dark-button-hover-background-color};
 }
 
-// Mixin to apply Soft Pastels light theme
+// Soft Pastels - Light Theme Mixin
 @mixin soft-pastels-light-theme {
   --primary-color: #{$soft-light-primary-color};
   --primary-color-light: #{$soft-light-primary-color-light};
@@ -51,7 +45,7 @@ $soft-dark-text-color: #f7fafc; // Very light gray text
   --text-color: #{$soft-light-text-color};
 }
 
-// Mixin to apply Soft Pastels dark theme
+// Soft Pastels - Dark Theme Mixin
 @mixin soft-pastels-dark-theme {
   --primary-color: #{$soft-dark-primary-color};
   --primary-color-light: #{$soft-dark-primary-color-light};

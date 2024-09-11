@@ -1,4 +1,47 @@
+// _variables.scss
+
+// Common Variables
 $primary-color: #007bff;
 $secondary-color: #6c757d;
 $font-family: "Arial, sans-serif";
 $spacing-unit: 16px;
+
+// Light Theme Variables
+$light-primary-color: $primary-color; // Use primary color
+$light-secondary-color: #f8f9fa;
+$light-background-color: #ffffff;
+$light-text-color: #212529;
+$light-section-background-color: #f3f3f3;
+$light-section-text-color: #212529;
+$light-heading-text-color: #212529;
+$light-paragraph-text-color: #555;
+$light-button-text-color: white;
+$light-button-background-color: $primary-color;
+$light-button-hover-background-color: #0056b3;
+
+// Dark Theme Variables
+$dark-primary-color: #375a7f;
+$dark-secondary-color: #444;
+$dark-background-color: #343a40;
+$dark-text-color: #e9ecef;
+$dark-section-background-color: #2a2e33;
+$dark-section-text-color: #e9ecef;
+$dark-heading-text-color: #f1f1f1;
+$dark-paragraph-text-color: #b0b3b8;
+$dark-button-text-color: #ffffff;
+$dark-button-background-color: #4a5668;
+$dark-button-hover-background-color: #637182;
+
+// Soft Pastels - Light Theme Variables
+$soft-light-primary-color: #4A5568; // Charcoal
+$soft-light-primary-color-light: #718096; // Lighter version of the primary color
+$soft-light-secondary-color: #EDF2F7; // Soft White
+$soft-light-background-color: #ffffff; // Pure white background
+$soft-light-text-color: #2D3748; // Dark Gray
+
+// Soft Pastels - Dark Theme Variables
+$soft-dark-primary-color: #EDF2F7; // Soft White for primary elements
+$soft-dark-primary-color-light: #E2E8F0; // Lighter version of the primary color
+$soft-dark-secondary-color: #2D3748; // Dark Slate
+$soft-dark-background-color: #1A202C; // Very dark background
+$soft-dark-text-color: #F7FAFC; // Very light gray text

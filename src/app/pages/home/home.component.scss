@@ -1,34 +1,36 @@
 .home-section {
   text-align: center;
   padding: 40px 20px;
-  background-color: #f3f3f3;
+  background-color: var(--section-background-color, #f3f3f3); // Theme variable with a fallback
   border-radius: 8px;
   margin: 20px auto;
   max-width: 600px;
+  color: var(--section-text-color, #212529); // Theme variable with a fallback
 
   h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: var(--heading-text-color, inherit); // Theme variable with a fallback
   }
 
   p {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #555;
+    color: var(--paragraph-text-color, #555); // Theme variable with a fallback
   }
 
   .explore-button {
     padding: 10px 20px;
     font-size: 1em;
-    color: white;
-    background-color: #007bff;
+    color: var(--button-text-color, white); // Theme variable with a fallback
+    background-color: var(--button-background-color, #007bff); // Theme variable with a fallback
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: #0056b3;
+      background-color: var(--button-hover-background-color, #0056b3); // Theme variable with a fallback
     }
   }
 }
