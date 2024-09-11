@@ -1,7 +1,7 @@
 @use "sass:math";
 header {
   background-color: var(--primary-color);
-  padding: $spacing-unit;
+  padding: 3px 20px;
   position: sticky;
   top: 0;
   .navbar {
