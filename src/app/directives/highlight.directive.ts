@@ -1,18 +1,9 @@
-import { Directive, HostBinding, HostListener, Input } from '@angular/core';
+import { Directive, HostBinding, Input } from '@angular/core';
 
 @Directive({
   selector: '[appHighlight]',
 })
 export class HighlightDirective {
-  @Input('appHighlight') highlightColor = '#ffffcc'; // Default color
-
-  @HostBinding('style.color') backgroundColor!: string;
-
-  @HostListener('mouseenter') onMouseEnter() {
-    this.backgroundColor = this.highlightColor;
-  }
-
-  @HostListener('mouseleave') onMouseLeave() {
-    this.backgroundColor = '';
-  }
+  @Input('appHighlight') highlightColor = '#ffffcc'; // Default text color
+  @HostBinding('style.color') textColor!: string; // Bind to text color instead of background
 }
