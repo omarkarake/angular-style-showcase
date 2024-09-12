@@ -23,7 +23,7 @@ export class Child2Component implements OnInit, OnDestroy {
       this.route.data.subscribe((data: Data) => {
         // Casting data to the expected NestedRecipeData type
         const recipeData = data as NestedRecipeData; // Adjust key if necessary
-        this.recipesDatas = recipeData.recipes.recipes;
+        this.recipesDatas = recipeData.recipes.recipes.slice(6);
       })
     );
   }

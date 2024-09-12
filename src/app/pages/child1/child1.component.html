@@ -1,7 +1,13 @@
-<div class="recipe-cards">
+<div *ngIf="!errorMessage" class="recipe-cards">
   <app-recipe-card
     appHighlight="black"
     *ngFor="let recipe of recipesDatas"
     [recipe]="recipe"
   ></app-recipe-card>
+</div>
+
+
+<!-- Show error message if there's an error -->
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
 </div>

@@ -14,21 +14,29 @@ import { RecipeCardComponent } from '../../recipe-card/recipe-card.component';
 })
 export class Child1Component implements OnInit, OnDestroy {
   recipesDatas: Recipe[] = [];
+  errorMessage: string | null = null; // Variable to store error messages
   parentSubscription: Subscription = new Subscription(); // Initialize subscription
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.parentSubscription.add(
-      this.route.data.subscribe((data: Data) => {
-        // Casting data to the expected NestedRecipeData type
-        const recipeData = data as NestedRecipeData; // Adjust key if necessary
-        this.recipesDatas = recipeData.recipes.recipes;
+      this.route.data.subscribe({
+        next: (data: Data) => {
+          // Casting data to the expected NestedRecipeData type
+          const recipeData = data as NestedRecipeData;
+          this.recipesDatas = recipeData.recipes.recipes; // Access the recipes array
+          this.errorMessage = null; // Clear any previous error messages
+        },
+        error: (err) => {
+          this.errorMessage = 'Failed to load recipes. Please try again later.'; // Set a user-friendly error message
+          console.error('Error fetching data:', err); // Log the error for debugging purposes
+        }
       })
     );
   }
 
   ngOnDestroy(): void {
-    this.parentSubscription.unsubscribe(); // Clean up the subscription
+    this.parentSubscription.unsubscribe(); // Clean up the subscription to prevent memory leaks
   }
 }

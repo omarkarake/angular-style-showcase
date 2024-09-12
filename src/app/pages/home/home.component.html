@@ -4,5 +4,18 @@
     Discover insightful articles and updates on various topics. Click the button
     below to explore our recipe section.
   </p>
-  <button class="explore-button" routerLink="/main-content">Go to Recipes</button>
+
+  <!-- Conditionally show loader or button -->
+  <div *ngIf="isLoading$ | async" class="loader">
+    <div class="spinner"></div> <!-- Spinner element -->
+  </div>
+
+  <button 
+    *ngIf="!(isLoading$ | async)" 
+    class="explore-button" 
+    routerLink="/main-content" 
+    (click)="goToRecipes()"
+  >
+    Go to Recipes
+  </button>
 </div>
