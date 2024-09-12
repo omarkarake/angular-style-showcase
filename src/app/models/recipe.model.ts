@@ -23,3 +23,7 @@ export interface Recipe {
     skip: number;
     limit: number;
   }
+
+  export interface NestedRecipeData {
+    recipes: RecipeData;
+  }
