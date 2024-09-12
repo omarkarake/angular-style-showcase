@@ -13,7 +13,7 @@ import { RecipeCardComponent } from '../../recipe-card/recipe-card.component';
   imports: [CommonModule, RecipeCardComponent], // Include RecipeCardComponent for displaying recipes
 })
 export class Child1Component implements OnInit, OnDestroy {
-  recipes: Recipe[] = [];
+  recipesDatas: Recipe[] = [];
   parentSubscription: Subscription = new Subscription(); // Initialize subscription
 
   constructor(private route: ActivatedRoute) {}
@@ -22,8 +22,8 @@ export class Child1Component implements OnInit, OnDestroy {
     this.parentSubscription.add(
       this.route.data.subscribe((data: Data) => {
         // Casting data to the expected NestedRecipeData type
-        const recipeData = data['recipes'] as NestedRecipeData; // Adjust key if necessary
-        console.log(recipeData.recipes);
+        const recipeData = data as NestedRecipeData; // Adjust key if necessary
+        this.recipesDatas = recipeData.recipes.recipes;
       })
     );
   }

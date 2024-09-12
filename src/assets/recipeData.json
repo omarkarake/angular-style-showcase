@@ -1,0 +1,204 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Classic Margherita Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Fresh mozzarella cheese",
+        "Fresh basil leaves",
+        "Olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat the oven to 475°F (245°C).",
+        "Roll out the pizza dough and spread tomato sauce evenly.",
+        "Top with slices of fresh mozzarella and fresh basil leaves.",
+        "Drizzle with olive oil and season with salt and pepper.",
+        "Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.",
+        "Slice and serve hot."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "cuisine": "Italian",
+      "caloriesPerServing": 300,
+      "tags": ["Vegetarian", "Pizza"],
+      "userId": 1,
+      "image": "https://homemadehooplah.com/wp-content/uploads/2022/05/Classic-Margherita-Pizza-1-1200.jpg",
+      "rating": 4.5,
+      "reviewCount": 150,
+      "mealType": ["Lunch", "Dinner"]
+    },
+    {
+      "id": 2,
+      "name": "Spaghetti Carbonara",
+      "ingredients": [
+        "Spaghetti",
+        "Pancetta",
+        "Eggs",
+        "Parmesan cheese",
+        "Garlic",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Cook spaghetti according to package instructions.",
+        "In a pan, sauté pancetta until crispy. Add garlic and cook for 1 minute.",
+        "Whisk eggs and Parmesan in a bowl.",
+        "Drain spaghetti and add to the pan with pancetta.",
+        "Remove from heat and quickly stir in the egg mixture.",
+        "Season with salt and pepper and serve immediately."
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medium",
+      "cuisine": "Italian",
+      "caloriesPerServing": 400,
+      "tags": ["Pasta", "Comfort Food"],
+      "userId": 2,
+      "image": "https://cookieandkate.com/images/2021/07/classic-margherita-pizza.jpg",
+      "rating": 4.7,
+      "reviewCount": 200,
+      "mealType": ["Lunch", "Dinner"]
+    },
+    {
+      "id": 3,
+      "name": "Chicken Caesar Salad",
+      "ingredients": [
+        "Romaine lettuce",
+        "Grilled chicken breast",
+        "Caesar dressing",
+        "Croutons",
+        "Parmesan cheese",
+        "Lemon"
+      ],
+      "instructions": [
+        "Chop romaine lettuce and place in a large bowl.",
+        "Add sliced grilled chicken, croutons, and grated Parmesan cheese.",
+        "Drizzle with Caesar dressing and toss to combine.",
+        "Squeeze lemon juice over the salad for extra flavor.",
+        "Serve chilled."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "American",
+      "caloriesPerServing": 350,
+      "tags": ["Salad", "Healthy"],
+      "userId": 3,
+      "image": "https://reciperunner.com/wp-content/uploads/2017/07/Grilled-Chicken-Caesar-Salad-Photograph.jpg",
+      "rating": 4.3,
+      "reviewCount": 120,
+      "mealType": ["Lunch", "Dinner"]
+    },
+    {
+      "id": 4,
+      "name": "Beef Tacos",
+      "ingredients": [
+        "Ground beef",
+        "Taco seasoning",
+        "Taco shells",
+        "Lettuce",
+        "Tomato",
+        "Cheddar cheese",
+        "Sour cream"
+      ],
+      "instructions": [
+        "Cook ground beef in a skillet until browned.",
+        "Add taco seasoning and water, simmer for 5 minutes.",
+        "Warm taco shells in the oven.",
+        "Fill shells with beef, lettuce, tomato, cheese, and sour cream.",
+        "Serve hot with extra toppings if desired."
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "cuisine": "Mexican",
+      "caloriesPerServing": 300,
+      "tags": ["Tacos", "Mexican"],
+      "userId": 4,
+      "image": "https://funwithoutfodmaps.com/wp-content/uploads/2022/07/Low-FODMAP-Beef-Tacos-Square.jpg",
+      "rating": 4.8,
+      "reviewCount": 180,
+      "mealType": ["Lunch", "Dinner"]
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Chip Cookies",
+      "ingredients": [
+        "Flour",
+        "Butter",
+        "Brown sugar",
+        "White sugar",
+        "Eggs",
+        "Vanilla extract",
+        "Baking soda",
+        "Salt",
+        "Chocolate chips"
+      ],
+      "instructions": [
+        "Preheat the oven to 350°F (175°C).",
+        "Cream together the butter, brown sugar, and white sugar.",
+        "Beat in the eggs one at a time, then stir in the vanilla.",
+        "Dissolve baking soda in hot water and add to the batter with salt.",
+        "Stir in flour and chocolate chips.",
+        "Drop by large spoonfuls onto ungreased pans.",
+        "Bake for 10 minutes or until edges are nicely browned."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 24,
+      "difficulty": "Easy",
+      "cuisine": "American",
+      "caloriesPerServing": 150,
+      "tags": ["Dessert", "Cookies"],
+      "userId": 5,
+      "image": "https://cookiesfordays.com/wp-content/uploads/2024/01/chocolate-chip-cookie-recipe-ft.jpg",
+      "rating": 4.9,
+      "reviewCount": 300,
+      "mealType": ["Dessert"]
+    },
+    {
+      "id": 6,
+      "name": "Vegetable Stir-Fry",
+      "ingredients": [
+        "Broccoli",
+        "Bell peppers",
+        "Carrots",
+        "Snow peas",
+        "Soy sauce",
+        "Garlic",
+        "Ginger",
+        "Olive oil"
+      ],
+      "instructions": [
+        "Heat olive oil in a large skillet over medium-high heat.",
+        "Add garlic and ginger, stir-fry for 1 minute.",
+        "Add broccoli, bell peppers, carrots, and snow peas.",
+        "Stir-fry vegetables until tender-crisp.",
+        "Add soy sauce and toss to coat.",
+        "Serve hot over rice or noodles."
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "cuisine": "Asian",
+      "caloriesPerServing": 200,
+      "tags": ["Vegetarian", "Stir-Fry"],
+      "userId": 6,
+      "image": "https://natashaskitchen.com/wp-content/uploads/2020/08/Vegetable-Stir-Fry-2.jpg",
+      "rating": 4.6,
+      "reviewCount": 160,
+      "mealType": ["Lunch", "Dinner"]
+    }
+  ],
+  "total": 6,
+  "skip": 0,
+  "limit": 6
+}

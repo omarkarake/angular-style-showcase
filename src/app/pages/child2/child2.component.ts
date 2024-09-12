@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Recipe, RecipeData } from '../../models/recipe.model';
+import { ActivatedRoute, Data } from '@angular/router';
+import { NestedRecipeData, Recipe } from '../../models/recipe.model';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { RecipeCardComponent } from '../../recipe-card/recipe-card.component';
@@ -13,19 +13,19 @@ import { RecipeCardComponent } from '../../recipe-card/recipe-card.component';
   imports: [CommonModule, RecipeCardComponent], // Add RecipeCardComponent to the imports array
 })
 export class Child2Component implements OnInit, OnDestroy {
-  recipes: Recipe[] = [];
+  recipesDatas: Recipe[] = [];
   parentSubscription: Subscription = new Subscription();
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.parentSubscription.add(
-      this.route.data.subscribe((data: any) => {
-        const recipeData: { recipes: RecipeData } = data;
-        this.recipes = recipeData.recipes.recipes.slice(5);
+      this.route.data.subscribe((data: Data) => {
+        // Casting data to the expected NestedRecipeData type
+        const recipeData = data as NestedRecipeData; // Adjust key if necessary
+        this.recipesDatas = recipeData.recipes.recipes;
       })
     );
-    console.log('Child2Component initialized with recipes:', this.recipes);
   }
 
   ngOnDestroy(): void {
